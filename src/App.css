@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-top: 10px;
+  text-align: center ;
+  /* background-color: #0065B7; */
+  background-image: linear-gradient( to bottom, #0065B7, #258ab2 );
+  color: #fff;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 394x) {
+  .header {
+    background-color: #333333;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header h1 {
+  font-size: 32px;
+}
+
+.header img {
+  width: 95px;
+  height: 80px;
+}
+
+.middle-1 {
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  /* background-color: #0684B4; */
+  background-image: linear-gradient( to bottom, #258ab2, #fff );
+  color: #000;
+}
+
+.middle-1 h3{
+  color: #686868;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.middle-1 h5{
+  padding: 20px;;
+  font-weight: 300;
+}
+
+.middle-2 {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.middle-2 .numbers {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.middle-2 .numbers .number {
+  margin: 8px;
+  padding: 8px;
+  background-color: #209869;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.middle-2 .btn{
+  background-color: #258ab2;
+  border: none;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.middle-2 .btn:hover {
+  background-color: #52b0d5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cont-btn {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.footer1 {
+  padding: 70px;
+  background-image: linear-gradient( to bottom, #fff, #258ab2 );
+}
+
+.footer2 {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  background-image: linear-gradient( to bottom, #258ab2, #0065B7 );
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  text-align: center;
+
+}
+
+.footer2 span {
+  font-size: 12px;
+  font-weight: 300;
 }
